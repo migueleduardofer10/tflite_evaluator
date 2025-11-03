@@ -26,7 +26,7 @@ object ImageUtils {
         return Pair(images, labels)
     }
 
-    private fun preprocess(bitmap: Bitmap, inputSize: Int): ByteBuffer {
+    fun preprocess(bitmap: Bitmap, inputSize: Int): ByteBuffer {
         val scaled = Bitmap.createScaledBitmap(bitmap, inputSize, inputSize, true)
         val buffer = ByteBuffer.allocateDirect(1 * inputSize * inputSize * 3 * 4)
         buffer.order(ByteOrder.nativeOrder())

@@ -1,6 +1,7 @@
 package com.example.tfliteevaluator
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.support.common.FileUtil
 
@@ -20,35 +21,44 @@ class Evaluator(private val context: Context) {
         })
 
         val modelLabels = FileUtil.loadLabels(context, modelLabelsPath)
-        val (images, groundTruths) = ImageUtils.loadImages(context, datasetPath, inputSize)
         val gtLabels = FileUtil.loadLabels(context, gtLabelsPath)
 
+        val classDirs = context.assets.list(datasetPath) ?: return "No dataset"
         var correctTop1 = 0
         val times = mutableListOf<Long>()
+        var totalImages = 0
 
-        for (i in images.indices) {
-            val input = images[i]
-            val output = Array(1) { FloatArray(numClasses) }
+        for (className in classDirs) {
+            val imageFiles = context.assets.list("$datasetPath/$className") ?: continue
+            for (fileName in imageFiles) {
+                val inputStream = context.assets.open("$datasetPath/$className/$fileName")
+                val bitmap = BitmapFactory.decodeStream(inputStream)
+                val input = ImageUtils.preprocess(bitmap, inputSize)
 
-            val start = System.nanoTime()
-            interpreter.run(input, output)
-            val end = System.nanoTime()
+                val output = Array(1) { FloatArray(numClasses) }
 
-            times.add(end - start)
-            val prediction = output[0]
-            val top1 = prediction.indices.maxByOrNull { prediction[it] } ?: -1
+                val start = System.nanoTime()
+                interpreter.run(input, output)
+                val end = System.nanoTime()
 
-            if (modelLabels[top1] == gtLabels[i]) correctTop1++
+                val prediction = output[0]
+                val top1 = prediction.indices.maxByOrNull { prediction[it] } ?: -1
+
+                if (modelLabels[top1] == className) correctTop1++
+                times.add(end - start)
+                totalImages++
+            }
         }
 
         val avgMs = times.average() / 1_000_000
-        val acc = 100.0 * correctTop1 / images.size
+        val acc = 100.0 * correctTop1 / totalImages
 
         return """
-            Evaluación completa
-            Imágenes: ${images.size}
-            Avg latency: ${"%.2f".format(avgMs)} ms
-            Top-1 Accuracy: ${"%.2f".format(acc)} %
-        """.trimIndent()
+        Evaluación completa
+        Imágenes: $totalImages
+        Promedio latencia: ${"%.2f".format(avgMs)} ms
+        Precisión Top-1: ${"%.2f".format(acc)} %
+    """.trimIndent()
     }
+
 }
