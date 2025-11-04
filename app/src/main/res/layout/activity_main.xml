@@ -13,6 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <Spinner
+        android:id="@+id/model_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+
     <Button
         android:id="@+id/start_eval"
         android:text="Evaluar modelo"
