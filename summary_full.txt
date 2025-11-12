@@ -1,0 +1,460 @@
+==================== ITERACIN 1 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 16125, First inference: 19290, Warmup (avg): 18939.8, Inference (avg): 18921.9
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26467, First inference: 17253, Warmup (avg): 16682.2, Inference (avg): 16574.5
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 15450, First inference: 12169, Warmup (avg): 12084.2, Inference (avg): 12052.5
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15321, First inference: 19003, Warmup (avg): 18859.4, Inference (avg): 18981.4
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25955, First inference: 17434, Warmup (avg): 16840.5, Inference (avg): 16956
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 15068, First inference: 12192, Warmup (avg): 12037.6, Inference (avg): 12051.6
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 15552, First inference: 18889, Warmup (avg): 18951.3, Inference (avg): 18910.3
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26073, First inference: 16907, Warmup (avg): 16610.7, Inference (avg): 16960.3
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 15857, First inference: 12077, Warmup (avg): 12031.7, Inference (avg): 12117.5
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14893, First inference: 20018, Warmup (avg): 19330, Inference (avg): 24826.3
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 24122, First inference: 26067, Warmup (avg): 27528.4, Inference (avg): 20765.5
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 16778, First inference: 12365, Warmup (avg): 12101, Inference (avg): 12674.5
+
+
+
+==================== ITERACIN 2 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 16192, First inference: 19126, Warmup (avg): 19329.8, Inference (avg): 23509.8
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 39253, First inference: 26746, Warmup (avg): 21500.1, Inference (avg): 18265.3
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 15452, First inference: 12096, Warmup (avg): 12031.1, Inference (avg): 12071.1
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15849, First inference: 19021, Warmup (avg): 18884.9, Inference (avg): 18891.3
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26450, First inference: 16914, Warmup (avg): 16575.1, Inference (avg): 16576.1
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 15048, First inference: 12142, Warmup (avg): 12111.4, Inference (avg): 12043.6
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 15510, First inference: 19228, Warmup (avg): 19026.5, Inference (avg): 18953.5
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26181, First inference: 17015, Warmup (avg): 16656.4, Inference (avg): 16630.3
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 15344, First inference: 12175, Warmup (avg): 12042.6, Inference (avg): 12014.1
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 15478, First inference: 20536, Warmup (avg): 19366.6, Inference (avg): 19471.9
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 15955, First inference: 18971, Warmup (avg): 18866.5, Inference (avg): 18893.9
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 15020, First inference: 12094, Warmup (avg): 12013.9, Inference (avg): 12019.1
+
+
+
+==================== ITERACIN 3 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 16589, First inference: 20182, Warmup (avg): 19710.2, Inference (avg): 18758.8
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26012, First inference: 17107, Warmup (avg): 16464.2, Inference (avg): 16577.8
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 15487, First inference: 12051, Warmup (avg): 12011.9, Inference (avg): 12020.9
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15839, First inference: 18712, Warmup (avg): 18839, Inference (avg): 20769.6
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 33001, First inference: 22598, Warmup (avg): 30160.6, Inference (avg): 22671.6
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 20039, First inference: 12526, Warmup (avg): 14796.3, Inference (avg): 12545.2
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 19939, First inference: 19064, Warmup (avg): 18281.8, Inference (avg): 18287.1
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25424, First inference: 16514, Warmup (avg): 15777.9, Inference (avg): 15759.1
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14667, First inference: 12046, Warmup (avg): 11974.7, Inference (avg): 11994.8
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14231, First inference: 19735, Warmup (avg): 18812.9, Inference (avg): 18744.1
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 14691, First inference: 18167, Warmup (avg): 18209.8, Inference (avg): 22127.7
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 16188, First inference: 12569, Warmup (avg): 13509.6, Inference (avg): 12895.8
+
+
+
+==================== ITERACIN 4 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 14415, First inference: 18352, Warmup (avg): 18174.8, Inference (avg): 19556.6
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25656, First inference: 16350, Warmup (avg): 15667.7, Inference (avg): 18326.3
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 29150, First inference: 15250, Warmup (avg): 18537, Inference (avg): 14411.6
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 17339, First inference: 21136, Warmup (avg): 19259.4, Inference (avg): 18298.9
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26302, First inference: 16310, Warmup (avg): 15658.5, Inference (avg): 15797.5
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 15225, First inference: 12180, Warmup (avg): 12017.5, Inference (avg): 11970.1
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 14703, First inference: 18900, Warmup (avg): 18281.4, Inference (avg): 18755.2
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25726, First inference: 16534, Warmup (avg): 17009.1, Inference (avg): 16053.3
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14743, First inference: 12050, Warmup (avg): 11972.5, Inference (avg): 11985.8
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14221, First inference: 19387, Warmup (avg): 18714.9, Inference (avg): 18786.1
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 14882, First inference: 18657, Warmup (avg): 18149.4, Inference (avg): 18222.7
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 14756, First inference: 12055, Warmup (avg): 11968.5, Inference (avg): 11996.9
+
+
+
+==================== ITERACIN 5 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 14730, First inference: 18837, Warmup (avg): 18195.8, Inference (avg): 18221.1
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25711, First inference: 16300, Warmup (avg): 15726.4, Inference (avg): 15789.1
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 14582, First inference: 12051, Warmup (avg): 11962.8, Inference (avg): 11993.2
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 14744, First inference: 18535, Warmup (avg): 18105.6, Inference (avg): 18176.2
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25523, First inference: 16650, Warmup (avg): 15772.2, Inference (avg): 15682
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 14553, First inference: 12055, Warmup (avg): 11993.8, Inference (avg): 11994.9
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 15062, First inference: 18310, Warmup (avg): 18395.4, Inference (avg): 18183.7
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25354, First inference: 16306, Warmup (avg): 15781.3, Inference (avg): 15708.2
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14590, First inference: 12040, Warmup (avg): 11947.5, Inference (avg): 11983.5
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14139, First inference: 19243, Warmup (avg): 18760.5, Inference (avg): 18743.3
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 15018, First inference: 18312, Warmup (avg): 18263.1, Inference (avg): 18316.7
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 14819, First inference: 12102, Warmup (avg): 12000.6, Inference (avg): 12000.2
+
+
+
+==================== ITERACIN 6 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 14534, First inference: 18069, Warmup (avg): 18179.2, Inference (avg): 18177.5
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25428, First inference: 16214, Warmup (avg): 15808.9, Inference (avg): 15721
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 14786, First inference: 12245, Warmup (avg): 12000.5, Inference (avg): 12031.6
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 14720, First inference: 18218, Warmup (avg): 18368.3, Inference (avg): 18247.4
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25697, First inference: 15932, Warmup (avg): 15689.2, Inference (avg): 15796.5
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 14644, First inference: 12051, Warmup (avg): 11980.7, Inference (avg): 12004.6
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 14627, First inference: 18640, Warmup (avg): 18185, Inference (avg): 18257
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25662, First inference: 16485, Warmup (avg): 15549.1, Inference (avg): 15815.6
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14838, First inference: 12063, Warmup (avg): 11959.2, Inference (avg): 11998.7
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14267, First inference: 19690, Warmup (avg): 18884.7, Inference (avg): 18705.9
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 14747, First inference: 18387, Warmup (avg): 18243, Inference (avg): 18247.1
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 14512, First inference: 12067, Warmup (avg): 11988.4, Inference (avg): 11990
+
+
+
+==================== ITERACIN 7 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 14736, First inference: 18127, Warmup (avg): 18277.3, Inference (avg): 18174.5
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25847, First inference: 16988, Warmup (avg): 15762.4, Inference (avg): 15943.1
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 14457, First inference: 12023, Warmup (avg): 11966.5, Inference (avg): 12498.6
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 27640, First inference: 22877, Warmup (avg): 22790, Inference (avg): 20687
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25902, First inference: 16236, Warmup (avg): 15664.3, Inference (avg): 16943.6
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 14531, First inference: 12077, Warmup (avg): 12161.8, Inference (avg): 12111.6
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 15401, First inference: 18645, Warmup (avg): 18196, Inference (avg): 18211.1
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25697, First inference: 16883, Warmup (avg): 15820.9, Inference (avg): 16712.6
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14794, First inference: 12006, Warmup (avg): 11988.5, Inference (avg): 11982.4
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14716, First inference: 19713, Warmup (avg): 18673.4, Inference (avg): 18664.2
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 14728, First inference: 18573, Warmup (avg): 18273.3, Inference (avg): 18330.5
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 14670, First inference: 12071, Warmup (avg): 11996.3, Inference (avg): 11966.9
+
+
+
+==================== ITERACIN 8 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 14569, First inference: 18113, Warmup (avg): 18125.3, Inference (avg): 18268
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25379, First inference: 16287, Warmup (avg): 15701.8, Inference (avg): 15715.9
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 14595, First inference: 12322, Warmup (avg): 11994.9, Inference (avg): 12049.7
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15539, First inference: 18930, Warmup (avg): 18285.7, Inference (avg): 18371.9
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25916, First inference: 16362, Warmup (avg): 15790.6, Inference (avg): 15707.5
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 14815, First inference: 12011, Warmup (avg): 11984.2, Inference (avg): 11974.4
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 14739, First inference: 18482, Warmup (avg): 18203.4, Inference (avg): 18615.7
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 25342, First inference: 16467, Warmup (avg): 15754.8, Inference (avg): 15716.2
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 14691, First inference: 12103, Warmup (avg): 11982.6, Inference (avg): 11996.5
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 14116, First inference: 19414, Warmup (avg): 18807.8, Inference (avg): 22112.8
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 18484, First inference: 19939, Warmup (avg): 21011.4, Inference (avg): 23779.8
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 24994, First inference: 29920, Warmup (avg): 13981, Inference (avg): 12936.9
+
+
+
+==================== ITERACIN 9 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 19932, First inference: 23156, Warmup (avg): 21251.4, Inference (avg): 19182
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 28685, First inference: 18856, Warmup (avg): 18887.5, Inference (avg): 16922.2
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 15418, First inference: 12143, Warmup (avg): 12054.1, Inference (avg): 12252.2
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15810, First inference: 19092, Warmup (avg): 20070.2, Inference (avg): 19424.9
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26409, First inference: 16632, Warmup (avg): 16509, Inference (avg): 16649.5
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 15249, First inference: 12143, Warmup (avg): 12037.6, Inference (avg): 12079.2
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 16148, First inference: 19640, Warmup (avg): 19098.1, Inference (avg): 19137.8
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26376, First inference: 16980, Warmup (avg): 16520.3, Inference (avg): 17588.6
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 15625, First inference: 12143, Warmup (avg): 12062.1, Inference (avg): 12062.8
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 15029, First inference: 20081, Warmup (avg): 19472.6, Inference (avg): 21504.3
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 21043, First inference: 21473, Warmup (avg): 19964.9, Inference (avg): 18817.1
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 15257, First inference: 12137, Warmup (avg): 12036.3, Inference (avg): 12019.1
+
+
+
+==================== ITERACIN 10 ====================
+==================== base ====================
+--- mobilenetv2_base_float32.tflite ---
+INFO: Inference timings in us: Init: 15941, First inference: 18931, Warmup (avg): 19271.1, Inference (avg): 18793
+
+--- mobilenetv2_base_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26321, First inference: 17328, Warmup (avg): 16449.6, Inference (avg): 16581.2
+
+--- mobilenetv2_base_int8.tflite ---
+INFO: Inference timings in us: Init: 15197, First inference: 12180, Warmup (avg): 12143.9, Inference (avg): 12202.9
+
+
+==================== pruned ====================
+--- mobilenetv2_pruned_float32.tflite ---
+INFO: Inference timings in us: Init: 15541, First inference: 19008, Warmup (avg): 18751.3, Inference (avg): 19058.8
+
+--- mobilenetv2_pruned_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26534, First inference: 17170, Warmup (avg): 16559.3, Inference (avg): 16317.6
+
+--- mobilenetv2_pruned_int8.tflite ---
+INFO: Inference timings in us: Init: 15406, First inference: 12141, Warmup (avg): 12000.7, Inference (avg): 12036
+
+
+==================== clustered ====================
+--- mobilenetv2_clustered_float32.tflite ---
+INFO: Inference timings in us: Init: 15344, First inference: 18624, Warmup (avg): 18783.5, Inference (avg): 18787.8
+
+--- mobilenetv2_clustered_dynamic.tflite ---
+INFO: Inference timings in us: Init: 26410, First inference: 18993, Warmup (avg): 18685, Inference (avg): 20726.4
+
+--- mobilenetv2_clustered_int8.tflite ---
+INFO: Inference timings in us: Init: 15451, First inference: 12143, Warmup (avg): 12071.6, Inference (avg): 13815.4
+
+
+==================== pcqat ====================
+--- mobilenetv2_pcqat_float32.tflite ---
+INFO: Inference timings in us: Init: 17196, First inference: 21785, Warmup (avg): 20387.3, Inference (avg): 22885.4
+
+--- mobilenetv2_pcqat_dynamic.tflite ---
+INFO: Inference timings in us: Init: 20817, First inference: 23045, Warmup (avg): 28452.9, Inference (avg): 27914.3
+
+--- mobilenetv2_pcqat_int8.tflite ---
+INFO: Inference timings in us: Init: 20859, First inference: 19228, Warmup (avg): 13589, Inference (avg): 13225.5
+
+
+

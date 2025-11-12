@@ -1,36 +1,46 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <TextView
-        android:text="TFLite Evaluator"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_marginBottom="24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Spinner
-        android:id="@+id/model_selector"
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:text="TFLite Evaluator"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/start_eval"
-        android:text="Evaluar modelo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/model_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/result_text"
-        android:text="Esperando evaluación..."
-        android:layout_marginTop="24dp"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        <Button
+            android:id="@+id/start_eval"
+            android:text="Evaluar modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:text="Esperando evaluación..."
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:textIsSelectable="true"
+            android:padding="8dp"
+            android:background="#1AFFFFFF"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+</ScrollView>

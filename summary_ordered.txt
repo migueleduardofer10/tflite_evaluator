@@ -1,0 +1,19 @@
+==================== base ====================
+mobilenetv2_base_dynamic.tflite -> Init s
+mobilenetv2_base_float32.tflite -> Init s
+mobilenetv2_base_int8.tflite -> Init s
+
+==================== pruned ====================
+mobilenetv2_pruned_dynamic.tflite -> Init s
+mobilenetv2_pruned_float32.tflite -> Init s
+mobilenetv2_pruned_int8.tflite -> Init s
+
+==================== clustered ====================
+mobilenetv2_clustered_dynamic.tflite -> Init s
+mobilenetv2_clustered_float32.tflite -> Init s
+mobilenetv2_clustered_int8.tflite -> Init s
+
+==================== pcqat ====================
+mobilenetv2_pcqat_float32.tflite -> Init s
+mobilenetv2_pcqat_int8.tflite -> Init s
+

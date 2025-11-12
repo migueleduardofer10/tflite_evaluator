@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/stepNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_marginBottom="32dp"
+        android:textSize="96sp"
+        style="@style/Headline1"/>
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Listo!"
+        android:layout_marginBottom="12dp"
+        style="@style/Headline1"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results_description"
+        android:layout_marginBottom="40dp"
+        style="@style/Paragraph"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:text="Probar"
+        style="@style/button_1"/>
+
+</LinearLayout>

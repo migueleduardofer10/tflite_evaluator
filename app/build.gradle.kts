@@ -71,4 +71,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
+    // Lottie animation
+    implementation("com.airbnb.android:lottie:6.5.2")
 }

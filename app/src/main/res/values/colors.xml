@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_500">#6200EE</color>
-    <color name="purple_700">#3700B3</color>
-    <color name="teal_200">#03DAC5</color>
+    <color name="principal">#25282A</color>
+    <color name="secundario_1">#414345</color>
+    <color name="secundario_2">#C9CACA</color>
+    <color name="secundario_3">#E4E5E5</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FB2020</color>
+    <color name="bounding_box_color">#234567</color>
+
+
+    <!-- TF Branding Orange -->
+    <color name="tfl_color_orange">#FF6F00</color>
+    <color name="tfl_color_orange_light">#FFFFA800</color>
+    <color name="toolbar_background">#EEEEEE</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="text_color">@android:color/black</color>
+    <color name="text_color_white">@android:color/white</color>
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
+    <color name="btn_green">#00db8b</color>
+    <color name="btn_gray">#7c8890</color>
+    <color name="btn_yellow">#ede27e</color>
 </resources>

@@ -1,0 +1,19 @@
+==================== base ====================
+mobilenetv2_base_dynamic.tflite -> 28.00 ms
+mobilenetv2_base_float32.tflite -> 24.15 ms
+mobilenetv2_base_int8.tflite -> 19.23 ms
+
+==================== pruned ====================
+mobilenetv2_pruned_dynamic.tflite -> 25.52 ms
+mobilenetv2_pruned_float32.tflite -> 16.14 ms
+mobilenetv2_pruned_int8.tflite -> 6.94 ms
+
+==================== clustered ====================
+mobilenetv2_clustered_dynamic.tflite -> 32.28 ms
+mobilenetv2_clustered_float32.tflite -> 24.58 ms
+mobilenetv2_clustered_int8.tflite -> 29.17 ms
+
+==================== pcqat ====================
+mobilenetv2_pcqat_float32.tflite -> 27.90 ms
+mobilenetv2_pcqat_int8.tflite -> 6.05 ms
+

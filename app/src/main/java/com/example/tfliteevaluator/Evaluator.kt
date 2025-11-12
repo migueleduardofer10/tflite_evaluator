@@ -10,7 +10,7 @@ class Evaluator(private val context: Context, private val modelFile: String) {
     private val modelPath = "models/$modelFile"
     private val modelLabelsPath = "model_output_labels.txt"
     private val datasetPath = "cifar10_images"
-    private val inputSize = 32
+
     private val numClasses = 10
 
     // Datos del modelo
@@ -53,7 +53,7 @@ class Evaluator(private val context: Context, private val modelFile: String) {
             for (fileName in imageFiles) {
                 val inputStream = context.assets.open("$datasetPath/$className/$fileName")
                 val bitmap = BitmapFactory.decodeStream(inputStream)
-                val input = ImageUtils.preprocess(bitmap, inputSize, inputType)
+                val input = ImageUtils.preprocess(bitmap, inputType)
 
                 val outputFloat = Array(1) { FloatArray(numClasses) }
                 val outputByte = Array(1) { ByteArray(numClasses) }

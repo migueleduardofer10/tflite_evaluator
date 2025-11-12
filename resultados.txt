@@ -1,0 +1,255 @@
+=== Benchmarking  ===
+INFO: STARTING!
+=== Benchmarking /data/local/tmp/mobilenetv2_base_dynamic.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_base_dynamic.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_base_dynamic.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 16 delegate kernels.
+INFO: The input model file size (MB): 2.66872
+INFO: Initialized session in 57.259ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=18 first=67803 curr=23592 min=11335 max=69089 avg=28296.2 std=16989 p5=11335 median=23592 p95=69089
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=23711 curr=21833 min=11138 max=52273 avg=25605.2 std=12377 p5=11877 median=22824 p95=47736
+
+INFO: Inference timings in us: Init: 57259, First inference: 67803, Warmup (avg): 28296.2, Inference (avg): 25605.2
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=11.2734 overall=12.4883
+=== Benchmarking /data/local/tmp/mobilenetv2_base_float32.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_base_float32.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_base_float32.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be completely executed by the delegate.
+INFO: The input model file size (MB): 9.52039
+INFO: Initialized session in 78.866ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=18 first=24634 curr=35705 min=10637 max=45905 avg=28267.2 std=10403 p5=10637 median=31249 p95=45905
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=38338 curr=61290 min=29123 max=66067 avg=50163.4 std=11845 p5=30252 median=56027 p95=62899
+
+INFO: Inference timings in us: Init: 78866, First inference: 24634, Warmup (avg): 28267.2, Inference (avg): 50163.4
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=24.6641 overall=24.6641
+=== Benchmarking /data/local/tmp/mobilenetv2_base_int8.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_base_int8.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_base_int8.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 2 delegate kernels.
+INFO: The input model file size (MB): 2.87358
+INFO: Initialized session in 42.874ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=35 first=67901 curr=15059 min=4292 max=67901 avg=14545.1 std=9948 p5=4458 median=14685 p95=18118
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=70 first=17460 curr=14806 min=5560 max=17762 avg=14334.1 std=1767 p5=10484 median=14476 p95=15984
+
+INFO: Inference timings in us: Init: 42874, First inference: 67901, Warmup (avg): 14545.1, Inference (avg): 14334.1
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=10.4141 overall=10.4141
+=== Benchmarking /data/local/tmp/mobilenetv2_clustered_dynamic.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_clustered_dynamic.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_clustered_dynamic.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 16 delegate kernels.
+INFO: The input model file size (MB): 2.66872
+INFO: Initialized session in 66.64ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=4 first=141480 curr=139886 min=139886 max=148098 avg=144335 std=3696 p5=139886 median=147876 p95=148098
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=132402 curr=37279 min=9632 max=132402 avg=35021.5 std=19725 p5=12655 median=37851 p95=52433
+
+INFO: Inference timings in us: Init: 66640, First inference: 141480, Warmup (avg): 144335, Inference (avg): 35021.5
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=11.4336 overall=12.5742
+=== Benchmarking /data/local/tmp/mobilenetv2_clustered_float32.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_clustered_float32.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_clustered_float32.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be completely executed by the delegate.
+INFO: The input model file size (MB): 9.52039
+INFO: Initialized session in 92.571ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=4 first=125951 curr=179368 min=125951 max=199973 avg=159474 std=31151 p5=125951 median=179368 p95=199973
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=164122 curr=9600 min=7410 max=254066 avg=39573.8 std=56208 p5=9600 median=20570 p95=188844
+
+INFO: Inference timings in us: Init: 92571, First inference: 125951, Warmup (avg): 159474, Inference (avg): 39573.8
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=24.6914 overall=24.6914
+=== Benchmarking /data/local/tmp/mobilenetv2_clustered_int8.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_clustered_int8.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_clustered_int8.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 2 delegate kernels.
+INFO: The input model file size (MB): 2.87358
+INFO: Initialized session in 47.664ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=4 first=100827 curr=159993 min=90325 max=175751 avg=131724 std=36762 p5=90325 median=159993 p95=175751
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=155715 curr=14992 min=5254 max=159991 avg=22688.6 std=32933 p5=5986 median=14807 p95=140142
+
+INFO: Inference timings in us: Init: 47664, First inference: 100827, Warmup (avg): 131724, Inference (avg): 22688.6
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=10.375 overall=10.375
+=== Benchmarking /data/local/tmp/mobilenetv2_pcqat_float32.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_pcqat_float32.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_pcqat_float32.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 3 delegate kernels.
+INFO: The input model file size (MB): 9.53324
+INFO: Initialized session in 82.453ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=3 first=195366 curr=181943 min=181943 max=209656 avg=195655 std=11315 p5=181943 median=195366 p95=209656
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=187925 curr=21129 min=7489 max=187925 avg=26249.1 std=36516 p5=7888 median=18762 p95=129658
+
+INFO: Inference timings in us: Init: 82453, First inference: 195366, Warmup (avg): 195655, Inference (avg): 26249.1
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=23.4922 overall=24.8711
+=== Benchmarking /data/local/tmp/mobilenetv2_pcqat_int8.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_pcqat_int8.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_pcqat_int8.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 2 delegate kernels.
+INFO: The input model file size (MB): 2.87353
+INFO: Initialized session in 53.447ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=3 first=175100 curr=155891 min=155891 max=175100 avg=167681 std=8429 p5=155891 median=172053 p95=175100
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=120133 curr=17267 min=4954 max=120133 avg=31819.6 std=19167 p5=5044 median=29508 p95=50982
+
+INFO: Inference timings in us: Init: 53447, First inference: 175100, Warmup (avg): 167681, Inference (avg): 31819.6
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=10.3711 overall=10.3711
+=== Benchmarking /data/local/tmp/mobilenetv2_pruned_dynamic.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_pruned_dynamic.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_pruned_dynamic.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 16 delegate kernels.
+INFO: The input model file size (MB): 2.66872
+INFO: Initialized session in 78.483ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=10 first=143332 curr=48175 min=23342 max=143332 avg=53318.3 std=31361 p5=23342 median=47954 p95=143332
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=35460 curr=15586 min=10592 max=53762 avg=24663 std=10584 p5=13684 median=20878 p95=48357
+
+INFO: Inference timings in us: Init: 78483, First inference: 143332, Warmup (avg): 53318.3, Inference (avg): 24663
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=11.4414 overall=12.7227
+=== Benchmarking /data/local/tmp/mobilenetv2_pruned_float32.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_pruned_float32.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_pruned_float32.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be completely executed by the delegate.
+INFO: The input model file size (MB): 9.52039
+INFO: Initialized session in 97.234ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=9 first=193556 curr=20897 min=9365 max=193556 avg=56876.2 std=70450 p5=9365 median=20897 p95=193556
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=58 first=24994 curr=7260 min=7260 max=28407 avg=17264.2 std=5886 p5=7667 median=20202 p95=24576
+
+INFO: Inference timings in us: Init: 97234, First inference: 193556, Warmup (avg): 56876.2, Inference (avg): 17264.2
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=24.6016 overall=24.6016
+=== Benchmarking /data/local/tmp/mobilenetv2_pruned_int8.tflite ===
+INFO: STARTING!
+INFO: Log parameter values verbosely: [0]
+INFO: Min num runs: [50]
+INFO: Num threads: [4]
+INFO: Graph: [/data/local/tmp/mobilenetv2_pruned_int8.tflite]
+INFO: Signature to run: []
+INFO: #threads used for CPU inference: [4]
+INFO: Use xnnpack: [1]
+INFO: Loaded model /data/local/tmp/mobilenetv2_pruned_int8.tflite
+INFO: XNNPACK delegate created.
+INFO: Explicitly applied XNNPACK delegate, and the model graph will be partially executed by the delegate w/ 2 delegate kernels.
+INFO: The input model file size (MB): 2.87358
+INFO: Initialized session in 31.078ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+INFO: count=82 first=5669 curr=10666 min=4802 max=17122 avg=6186.2 std=2468 p5=4954 median=5472 p95=12632
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=79 first=16945 curr=24612 min=4491 max=42433 avg=12749.5 std=10267 p5=4619 median=6222 p95=35832
+
+INFO: Inference timings in us: Init: 31078, First inference: 5669, Warmup (avg): 6186.2, Inference (avg): 12749.5
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=10.3711 overall=10.3711
